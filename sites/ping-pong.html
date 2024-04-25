@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing Discord.js</title>
+    <link href="../styles/ping-ping-style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../icon/OIP.jpg">
+</head>
+
+<body>
+    <div class="topnav">
+        <p class="title">Discord.bot</p>
+    </div>
+
+    <h1>Create Ping-Pong command</h1>
+    <p>This is simple example of how to create ping-pong command</p>
+    <pre class="code-block">
+        <code><span class="token keyword">const</span> <span class="token punctuation">{</span> SlashCommandBuilder <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'discord.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">SlashCommandBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">'ping'</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">setDescription</span><span class="token punctuation">(</span><span class="token string">'Replies with Pong!'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token keyword">async</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token parameter">interaction</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">await</span> interaction<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span><span class="token string">'Pong!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            </code>
+        </pre>
+
+    <div class="buttons">
+        <a href="../sites/connecting.html"  class="back-button">Back</a>
+        <a href="../sites/howtodeffend.html" target="_blank"class="button">Next step!</a>
+    </div>
+</body>
+
+</html>

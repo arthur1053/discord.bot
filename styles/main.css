@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Whitney';
+    src: url('Whitney-Font.otf') format('opentype');
+}
+
+body {
+    background-color: #5865F2;
+    font-family: 'Whitney', sans-serif;
+    margin: 0;/* Remove top and side margins */
+}
+
+.topnav {
+    background-color: #2F3136;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #FFFFFF; /* Это цвет Discord */
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container{
+    position: relative;
+    top: 80px;
+}
+
+.bamper {
+    text-align: center;
+    color: #FFFFFF;/* Это цвет Discord */
+    font-size: 100px;  
+    font-weight: bold;
+}
+
+.button{
+    font-size: x-large;
+    border-radius: 10px;
+    background-color: #2F3136; /* Красный цвет для кнопки */
+    color: #FFFFFF; /* Белый цвет текста на кнопке */
+    padding: 10px 20px; /* Добавить внутренние отступы для кнопки */
+    border: none; /* Убрать границу */
+    cursor: pointer; /* Изменить курсор при наведении */
+    transition: background-color 0.2s ease; /* Плавное изменение цвета при наведении */
+    text-decoration: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #383a3e; /* Изменение цвета при наведении */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing Discord.js</title>
+    <link href="../styles/howtodeffend-style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../icon/OIP.jpg">
+</head>
+
+<body>
+    <div class="topnav">
+        <p class="title">Discord.bot</p>
+    </div>
+    <h1>How to protekt your TOKEN?</h1>
+    <p>If the project is posted on GitHub (for example, as for a portfolio), then your TOKEN may be visible to others.
+        how to prevent this?</p>
+
+    <ol>
+        <li>Create a new file <b>".env".</b>It's the file that will ignored by Github </li>
+        <li>In this file file write <code>TOKEN="(write your token here)"</code></li>
+        <li>Than comeback into index.js</li>
+        <li>Put in the start <code>require('dotenv').config();</code></li>
+        <li>And put <code>client.login(process.env.TOKEN)</code></li>
+        <li>Now you can relax and your TOKEN in save</li>
+    </ol>
+    <div class="buttons">
+        <a href="../sites/ping-pong.html" class="back-button">Back</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Finish!</a>
+    </div>
+</body>
+
+</html>
